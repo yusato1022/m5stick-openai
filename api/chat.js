@@ -4,6 +4,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY_M5,
 });
 
+console.log(process.env.OPENAI_API_KEY_M5)
+
 export default async function handler(req, res) {
   try {
     const completion = await openai.chat.completions.create({
