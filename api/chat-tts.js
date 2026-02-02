@@ -5,7 +5,7 @@ export const config = {
 import OpenAI from openai;
 
 const client = new OpenAI({
-  apiKey process.env.OPENAI_API_KEY,
+  apiKey process.env.OPENAI_API_KEY_M5,
 });
 
 export default async function handler(req, res) {
